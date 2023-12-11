@@ -1,0 +1,7 @@
+# Run in background, force recreate
+db-up:
+    docker-compose up -d --force-recreate
+
+# Delete volume
+db-down:
+    docker-compose down -v
