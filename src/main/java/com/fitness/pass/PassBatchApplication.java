@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.transaction.PlatformTransactionManager;
 
 
-@EnableBatchProcessing
+//@EnableBatchProcessing
 @SpringBootApplication
 public class PassBatchApplication {
 
@@ -33,6 +33,7 @@ public class PassBatchApplication {
 				.start(passStep)
 				.build();
 	}
+
 	public static void main(String[] args) {
 		SpringApplication.run(PassBatchApplication.class, args);
 	}
